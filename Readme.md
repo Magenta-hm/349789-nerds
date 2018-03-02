@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Татьяна Керимова](https://up.htmlacademy.ru/htmlcss/20/user/349789).
-* Наставник: `Неизвестно`.
+* Наставник: [Елена Забара](https://htmlacademy.ru/profile/lena___elena).
 
 ---
 
