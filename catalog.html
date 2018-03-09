@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
     	<title>HTML Academy: Нёрдс</title>
       	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+      	<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
 		<header class="main-header">
@@ -30,9 +31,9 @@
 		</header>
 		
 		<main class="main-content">
-			<h2 class="main-content-title">Магазин готовых шаблонов</h2>
+			<h1 class="main-content-title">Магазин готовых шаблонов</h1>
 			<aside class="filter-container">
-                <form action="#" id="main-form">
+                <form action="https://echo.htmlacademy.ru" method="get" id="main-form">
             		<fieldset class="filter">  
               			<legend>Стоимость:</legend>
               			
@@ -58,16 +59,16 @@
                 		<legend class="filter-title">Сетка:</legend>
                 		<ul>
                 			<li>
-                				<input type="radio" id="web" name="radio-web" checked>
-                				<label class="circle-check" for="web">Адаптивная</label>
+                				<input class="visually-hidden" type="radio" id="filter-web" name="radio-web" checked>
+                				<label class="circle-check" for="filter-web">Адаптивная</label>
                 			</li>
                 			<li>
-                				<input type="radio" id="fix" name="radio-fix">
-                				<label class="circle" for="fix">Фиксированная</label>
+                				<input class="visually-hidden" type="radio" id="filter-fix" name="radio-fix">
+                				<label class="circle" for="filter-fix">Фиксированная</label>
                 			</li>
                 			<li>
-                				<input type="radio" id="stretch" name="radio-stretch">
-                				<label class="circle" for="stretch">Резиновая</label>
+                				<input class="visually-hidden" type="radio" id="filter-stretch" name="radio-stretch">
+                				<label class="circle" for="filter-stretch">Резиновая</label>
                 			</li>
                 		</ul>
               		</fieldset>
@@ -76,24 +77,24 @@
                 		<legend class="filter-title">Особенности:</legend>
                 		<ul>
                 			<li>
-                				<input type="checkbox" id="slider" name="checkbox-slider" checked>
-                				<label class="check-in" for="slider">Слайдер</label>
+                				<input class="visually-hidden" type="checkbox" id="filter-slider" name="checkbox-slider" checked>
+                				<label class="check-in" for="filter-slider">Слайдер</label>
                 			</li>
                 			<li>
-                				<input type="checkbox" id="advant" name="checkbox-advant">
-                				<label class="check-off" for="advant">Блок преимуществ</label>
+                				<input class="visually-hidden" type="checkbox" id="filter-advant" name="checkbox-advant">
+                				<label class="check-off" for="filter-advant">Блок преимуществ</label>
                 			</li>
                 			<li>
-                				<input type="checkbox" id="news" name="checkbox-news" checked>
-                				<label class="check-in" for="news">Новости</label>
+                				<input class="visually-hidden" type="checkbox" id="filter-news" name="checkbox-news" checked>
+                				<label class="check-in" for="filter-news">Новости</label>
                 			</li>
                 			<li>
-                				<input type="checkbox" id="gallery" name="checkbox-gallery">
-                				<label class="check-off" for="gallery">Галерея</label>
+                				<input class="visually-hidden" type="checkbox" id="filter-gallery" name="checkbox-gallery">
+                				<label class="check-off" for="filter-gallery">Галерея</label>
                 			</li>
                 			<li>
-                				<input type="checkbox" id="basket" name="checkbox-basket">
-                				<label class="check-off" for="basket">Корзина</label>
+                				<input class="visually-hidden" type="checkbox" id="filter-basket" name="checkbox-basket">
+                				<label class="check-off" for="filter-basket">Корзина</label>
                 			</li>
                 		</ul>
               		</fieldset>
@@ -283,7 +284,7 @@
                 </p>
 
                 <div class="button-send">
-                  <button class="btn" type="button" value="Отправить">Отправить</button>
+                  <button class="btn" type="submit" value="Отправить">Отправить</button>
                 </div>
             </form>
           </section>
