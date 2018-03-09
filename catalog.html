@@ -33,8 +33,8 @@
 			<h2 class="main-content-title">Магазин готовых шаблонов</h2>
 			<aside class="filter-container">
                 <form action="#" id="main-form">
-            		<div class="filter">  <!-- Фильтр стоимости тоже входит в форму. Это всё одна большая форма. -->
-              			<b>Стоимость:</b>
+            		<fieldset class="filter">  
+              			<legend>Стоимость:</legend>
               			
               			<div class="filter-scroll">
                 			<div class="scroll-control">
@@ -52,10 +52,10 @@
                   				<input class="price-max" type="text" value="15 000">
                 			</div>
               			</div>
-            		</div>
+            		</fieldset>
 
-              		<div class="filter-install">
-                		<b class="filter-title">Сетка:</b>
+              		<fieldset class="filter-install">
+                		<legend class="filter-title">Сетка:</legend>
                 		<ul>
                 			<li>
                 				<input type="radio" id="web" name="radio-web" checked>
@@ -70,10 +70,10 @@
                 				<label class="circle" for="stretch">Резиновая</label>
                 			</li>
                 		</ul>
-              		</div>
+              		</fieldset>
 
-              		<div class="filter-install">
-                		<b class="filter-title">Особенности:</b>
+              		<fieldset class="filter-install">
+                		<legend class="filter-title">Особенности:</legend>
                 		<ul>
                 			<li>
                 				<input type="checkbox" id="slider" name="checkbox-slider" checked>
@@ -96,8 +96,8 @@
                 				<label class="check-off" for="basket">Корзина</label>
                 			</li>
                 		</ul>
-              		</div>
-              		<button class="btn" type="button" value="Показать">Показать</button>
+              		</fieldset>
+              		<button class="btn" type="submit" value="Показать">Показать</button>
             	</form>	
 			</aside>
 
@@ -123,8 +123,9 @@
             			</div>
           			</div>
 
-          			<div class="catalog-gallery">
-            			<div class="catalog-item">
+          			<ul class="catalog-gallery">
+                  <h2 class="visually-hidden">Каталог шаблонов</h2>
+            			<li class="catalog-item">
               				<div class="catalog-item-wrapper">
                 				<div class="catalog-item-top">
                   					<span class="round"></span>
@@ -138,9 +139,9 @@
                   					<a href="#" class="btn item-price">9 900 руб.</a>
                 				</div>
               				</div>
-            			</div>
+            			</li>
 
-            			<div class="catalog-item">
+            			<li class="catalog-item">
               				<div class="catalog-item-wrapper">
                 				<div class="catalog-item-top">
                   					<span class="round"></span>
@@ -154,9 +155,9 @@
                   					<a href="#" class="btn item-price">9 900 руб.</a>
                 				</div>
               				</div>
-            			</div>
+            			</li>
 
-            			<div class="catalog-item">
+            			<li class="catalog-item">
               				<div class="catalog-item-wrapper">
                 				<div class="catalog-item-top">
                   					<span class="round"></span>
@@ -170,9 +171,9 @@
                   					<a href="#" class="btn item-price">9 900 руб.</a>
                 				</div>
               				</div>
-            			</div>
+            			</li>
 
-            			<div class="catalog-item">
+            			<li class="catalog-item">
               				<div class="catalog-item-wrapper">
                 				<div class="catalog-item-top">
                   					<span class="round"></span>
@@ -186,9 +187,9 @@
                   					<a href="#" class="btn item-price">9 900 руб.</a>
                 				</div>
               				</div>
-            			</div>
+            			</li>
 
-            			<div class="catalog-item">
+            			<li class="catalog-item">
               				<div class="catalog-item-wrapper">
                 				<div class="catalog-item-top">
                   					<span class="round"></span>
@@ -202,9 +203,9 @@
                   					<a href="#" class="btn item-price">9 900 руб.</a>
                 				</div>
               				</div>
-            			</div>
+            			</li>
 
-            			<div class="catalog-item">
+            			<li class="catalog-item">
               				<div class="catalog-item-wrapper">
                 				<div class="catalog-item-top">
                   					<span class="round"></span>
@@ -218,8 +219,8 @@
                   					<a href="#" class="btn item-price">9 900 руб.</a>
                 				</div>
               				</div>
-            			</div>
-          			</div>
+            			</li>
+          			</ul>
 
           			<div class="pages">
           				<ul class="pages-items">
@@ -260,31 +261,32 @@
       		</div>
 		</footer>
 
-    	<div class="form-container">
-        	<div class="form-close"><span>Закрыть</span></div>
-            <form action="#" method="post">
+    <section class="form-container">
+      <h2 class="fprm-title">Напишите нам</h2>
+            <div class="form-close"><span>Закрыть</span></div>
+            <form method="post" action="https://echo.htmlacademy.ru">
                 <div>
-                    <p class="form-left-part">
-                        <label for="client-name"><span>Ваше имя:</span></label>
-                        <input type="text" name="name" id="client-name" placeholder="Имя Фамилия" required>
-                    </p>
+                  <p class="form-left-part">
+                      <label for="client-name"><span>Ваше имя:</span></label>
+                      <input type="text" name="name" id="client-name" placeholder="Имя Фамилия" required>
+                  </p>
 
-                    <p class="form-right-part">
-                        <label for="client-email"><span>Ваш e-mail:</span></label>
-                        <input type="email" name="email" id="client-email" placeholder="email@example.com" required>
-                    </p>
+                  <p class="form-right-part">
+                      <label for="client-email"><span>Ваш e-mail:</span></label>
+                      <input type="email" name="email" id="client-email" placeholder="email@example.com" required>
+                  </p>
                 </div>
-                <div>
-                	<p>
-                    	<label for="client-letter"><span>Текст письма:</span></label>
-                    	<textarea name="letter" cols="25" rows="5" id="client-letter" placeholder="В свободной форме"></textarea>
-                	</p>
-				</div>
+
+                <p>
+                  <label for="client-letter"><span>Текст письма:</span></label>
+                  <textarea name="letter" cols="25" rows="5" id="client-letter" placeholder="В свободной форме"></textarea>
+                </p>
+
                 <div class="button-send">
-                    <button class="btn" type="button" value="Отправить">Отправить</button>
+                  <button class="btn" type="button" value="Отправить">Отправить</button>
                 </div>
             </form>
-        </div>
+          </section>
 
 	</body>
 </html>
