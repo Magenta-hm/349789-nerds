@@ -1,14 +1,357 @@
+/*==================ОБЩИЕ СТИЛИ==================*/
 body {
+	margin: 0;
+    padding: 0;
+
 	font-family: Roboto, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: normal;
+	color: #283136;
+
+	background-color: #ffffff;
 }
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*==================СТИЛИ КНОПОК==================*/
+.button,
+.btn {
+    font-size: 16px;
+    line-height: 18px;
+
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;    
+    text-transform: uppercase;
+
+    border: none;
+    border-radius: 3px;
+
+    display: inline-block;
+
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:focus,
+.btn:focus,
+.button:active,
+.btn:active {
+    color: rgba(40, 49, 54, 0.3);
+    /*border-top: 3px solid #e5e5e5;
+    box-sizing: border-box;*/
+}
+
+.long-button,
+.long-btn {
+    background-color: #fb565a;
+}
+
+.long-button:hover,
+.long-btn:hover,
+.long-button:focus,
+.long-btn:focus {
+    background-color: #e74246;
+}
+
+.long-button:active,
+.long-btn:active {
+    background-color: #d7373b;
+}
+
+.promo-slider .long-button{
+    padding: 15px 55px;
+}
+
+.advantage-item a {
+    padding: 15px 35px;
+}
+
+.button-web {
+    background-color: #fb565a;
+}
+
+.button-web:hover {
+    background-color: #e74246;
+}
+
+.button-web:focus,
+.button-web:active {
+    background-color: #d7373b;
+} 
+
+
+.button-app {
+    background-color: #00ca74;
+}
+
+.button-app:hover {
+    background-color: #00bc6c;
+}
+
+.button-app:focus,
+.button-app:active {
+    background-color: #00aa62;
+} 
+
+.button-presentations {
+    background-color: #efc84a;
+}
+
+.button-presentations:hover {
+    background-color: #eab534;
+}
+
+.button-presentations:focus,
+.button-presentations:active {
+    background-color: #e5a722;
+}
+
+.contacts .long-button {
+    font-size: 16px;
+    line-height: 18px;
+    padding: 15px 45px;
+}
+
+.long-btn {
+    padding: 15px 80px;
+}
+
+
+/*==================СТИЛИ НАВИГАЦИИ==================*/
+.logotype:hover {
+    opacity: 1;
+}
+
+.logotype:active,
+.logotype:focus {
+    opacity: 0.3;
+}
+
+.main-nav {
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+    text-transform: uppercase;
+
+    background-color: #eeeeee;
+}
+
+.nav-items,
+.promo-slider,
+.advantages-list,
+.orders,
+.portfolio-list,
+.footer-social ul {
+    list-style: none; 
+}
+
+.main-nav a {
+    color: #000000;
+}
+
+.main-nav a:hover {
+    color: #fb565a;
+}
+
+.main-nav a:active,
+.main-nav a:focus {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+
+/*==================СТИЛИ МЭЙНА==================*/
+.main-content {
+    background-color: #ffffff;
+}
+
+.main-content-promo {
+    background-color: #eeeeee;
+}
+
+.promo-slider h2 {
+    font-size: 55px;
+    line-height: 55px;
+}
+
+.main-content-advantages,
+.main-content-studio,
+.main-content-portfolio {
+    border-bottom: 2px solid #eeeeee;
+}
+
+.advantage-item {
+    text-align: center;
+}
+
+.advantage-item h3 {
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.content-studio-left b {
+    font-size: 45px;
+    line-height: 45px;
+    color: #000000;
+}
+
+.content-studio-left h3,
+.content-studio-right h3 {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.info-table-top th {
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 10.06px;
+    padding: 20px;
+}
+
+.info-table-bottom th {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: normal;
+}
+
+.portfolio-list img {
+    opacity: 0.2;
+}
+
+.portfolio-list img:hover {
+    opacity: 1;
+}
+
+.portfolio-list img:focus,
+.portfolio-list img:active {
+    opacity: 0.1;
+}
+
+/*.main-content-map {
+    background-image: url("img/map.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}*/
+
+.contacts {
+    background-color: #ffffff;
+}
+
+.contacts h2 {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contacts p {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #666666;
+}
+
+
+/*==================СТИЛИ ФУТЕРА==================*/
+.main-footer {
+  color: #444444;
+
+  background-color: #ffffff;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.social-button {
+  color: #444444;
+}
+
+.footer-sale b {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.footer-sale p {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: normal;
+}
+
+
+
+
+/*==================СТИЛИ ФОРМЫ==================*/
+.form-container {
+    margin: 10px;  /*временные*/
+    box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
+    width: 960px;
+    height: 590px;
+    background-color: #ffffff;
+    padding: 30px; /*временные*/
+}
+
+.form-title {
+    font-size: 45px;
+    line-height: 45px;
+    color: #000000;
+}
+
+.form-letter input[type="text"],
+.form-letter input[type="email"],
+.form-letter textarea {
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba(68, 68, 68, 0.5);
+  font-weight: normal;
+
+  background-color: #ffffff;
+  border: 2px solid #d7dcde;
+  padding: 10px 0;
+}
+
+.form-letter input[type="text"]:hover,
+.form-letter input[type="email"]:hover,
+.form-letter textarea:hover {
+    border-color: #b4b9bb;
+}
+
+.form-letter input[type="text"]:active,
+.form-letter input[type="email"]:active,
+.form-letter input[type="text"]:focus,
+.form-letter input[type="email"]:focus,
+.form-letter textarea:active,
+.form-letter textarea:focus {
+    border-color: #000000;
+}
+
+.label-name {
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  font-weight: bold;
+}
+
+input:invalid {
+  border-color: red;
 }

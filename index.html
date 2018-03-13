@@ -10,11 +10,11 @@
 		<header class="main-header">
 			<nav class="main-nav">
 				<a class="main-logo"> 
-					<img class="logotype" src="img/nerds-logo.svg" width="160" height="65" alt="Нёрдс"></img>
+					<img class="logotype" src="img/nerds-logo.svg" width="160" height="65" alt="Nёrds">
 				</a>
 				<ul class="nav-items">
 					<li>
-						<a href="#">Студия</a>
+						<a href="#" class="active-page">Студия</a>
 					</li>
 					<li>
 						<a href="#">Клиенты</a>
@@ -40,17 +40,17 @@
 						<li>							
 							<h2>Долго, дорого, скурпулезно.</h2> 
 							<p>Математически выверенный дизайндля вашего сайта или мобильного приложения.</p>
-							<a class="button" href="#">Узнать больше</a>
+							<a class="button long-button" href="#">Узнать больше</a>
 						</li>
 						<li> 
 							<h2>Любим математику как никто другой</h2> 
 							<p>Никакого креатива, только математиеческие формулы для расчета идеальных пропорций.</p>
-							<a class="button" href="#">Узнать больше</a>
+							<a class="button long-button" href="#">Узнать больше</a>
 						</li>	
 						<li>
 							<h2>Только ночь, только хардкор</h2>
 							<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-							<a class="button" href="#">Узнать больше</a>
+							<a class="button long-button" href="#">Узнать больше</a>
 						</li>
 					</ul>
 				</div>
@@ -61,21 +61,21 @@
         		<ul class="advantages-list">
           			<li class="advantage-item">
             			<h3>Веб-сайты</h3>
-            			<img src="img/illustration-1.png" width="300" height="146" alt="Веб-сайты">
+            			<img src="img/illustration-1.png" width="300" height="146" alt="Web-sites">
             			<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            			<a class="button" href="#">Заказать</a>
+            			<a class="button button-web" href="#">Заказать</a>
           			</li>
           			<li class="advantage-item">
             			<h3>Приложения</h3>
-            			<img src="img/illustration-2.png" width="300" height="146" alt="Приложения">
+            			<img src="img/illustration-2.png" width="300" height="146" alt="Apps">
             			<p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            			<a class="button" href="#">Заказать</a>
+            			<a class="button button-app" href="#">Заказать</a>
           			</li>
           			<li class="advantage-item">
             			<h3>Презентации</h3>
-            			<img src="img/illustration-3.png" width="300" height="146" alt="Презентации">
+            			<img src="img/illustration-3.png" width="300" height="146" alt="Presentations">
             			<p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            			<a class="button" href="#">Заказать</a>
+            			<a class="button button-presentations" href="#">Заказать</a>
           			</li>
         		</ul>
 			</section>
@@ -85,7 +85,7 @@
 					<b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
 					<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
 					<h3>Выполняем заказы на разработку:</h3>
-					<ul>
+					<ul class="orders">
 						<li>Веб-сайтов любой сложности</li>
 						<li>Мобильных приложений для iOS и Android</li>
 						<li>Слайдшоу и видео для корпоративных презентаций</li>
@@ -93,15 +93,15 @@
 				</div>
 				
 				<div class="content-studio-right">
-					<img class="studio-logo" src="img/nerds-illustration.jpg" width="360" height="208" alt="Нёрдс">
+					<img class="studio-logo" src="img/nerds-illustration.jpg" width="360" height="208" alt="Nёrds">
 					<h3>С 2004 года любим точность во всем:</h3>
 					<table class="info-table">
-						<tr>
+						<tr class="info-table-top">
 							<th>146%</th>
 							<th>100%</th>
 							<th>50%</th>
 						</tr>
-						<tr>
+						<tr class="info-table-bottom">
 							<th>Уровень самоотдачи</th>
 							<th>Соблюдение сроков</th>
 							<th>Минимальная предоплата</th>
@@ -112,23 +112,25 @@
 			
 			<section class="main-content-portfolio">
 				<h2 class="visually-hidden">Наше портфолио</h2>
-				<ul>
+				<ul class="portfolio-list">
 					<li>
-						<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" width="199" height="68" alt="HTML Academy"></a>
+						<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" width="199" height="68" aria-label="HTML Academy" alt="htmlacademy"></a>
 					</li>
 					<li>
-						<a href="#"><img src="img/logo-2.png" width="209" height="90" alt="Barbershop Borodinski"></a>
+						<a href="#"><img src="img/logo-2.png" width="209" height="90" aria-label="Barbershop Borodinski" alt="Barbershop"></a>
 					</li>
 					<li>
-						<a href="#"><img src="img/logo-3.png" width="185" height="52" alt="Pink"></a>
+						<a href="#"><img src="img/logo-3.png" width="185" height="52" aria-label="Pink" alt="Pink"></a>
 					</li>
 					<li>
-						<a href="#"><img src="img/logo-4.png" width="173" height="84" alt="Mishka"></a>
+						<a href="#"><img src="img/logo-4.png" width="173" height="84" aria-label="Mishka" alt="Mishka"></a>
 					</li>
 				</ul>
 			</section>
 			
 			<section class="main-content-map">
+				<h2 class="visually-hidden">Как до нас добраться</h2>
+				<p><img src="img/map.png" width="1440" height="785" aria-label="Карта проезда" alt="map"></p>
 				<div class="contacts">
 					<h2>Nёrds design studio</h2>
         			<p>
@@ -136,7 +138,7 @@
            				ул. Б. Конюшенная, д. 19/8<br>
            				Телефон: +7 (812) 275-75-75
         			</p>
-        			<a class="button" href="#">Напишите нам</a>
+        			<a class="button long-button" href="#">Напишите нам</a>
 				</div>
 			</section>
 		</main>
@@ -156,32 +158,31 @@
 		</footer>
 
 		<section class="form-container">
-			<h2 class="fprm-title">Напишите нам</h2>
-            <div class="form-close"><span>Закрыть</span></div>
-            <form method="post" action="https://echo.htmlacademy.ru">
+			<h2 class="form-title">Напишите нам</h2>
+            <div class="form-close"><span class="visually-hidden">Закрыть</span></div>
+            <form class="form-letter" method="post" action="https://echo.htmlacademy.ru">
               	<div>
                 	<p class="form-left-part">
-                  		<label for="client-name"><span>Ваше имя:</span></label>
+                  		<label for="client-name"><span class="label-name">Ваше имя:</span></label>
                   		<input type="text" name="name" id="client-name" placeholder="Имя Фамилия" required>
                 	</p>
 
                 	<p class="form-right-part">
-                  		<label for="client-email"><span>Ваш e-mail:</span></label>
+                  		<label for="client-email"><span class="label-name">Ваш e-mail:</span></label>
                   		<input type="email" name="email" id="client-email" placeholder="email@example.com" required>
                 	</p>
               	</div>
 
               	<p>
-              		<label for="client-letter"><span>Текст письма:</span></label>
+              		<label for="client-letter"><span class="label-name">Текст письма:</span></label>
               		<textarea name="letter" cols="25" rows="5" id="client-letter" placeholder="В свободной форме"></textarea>
               	</p>
 
               	<div class="button-send">
-                	<button class="btn" type="submit" value="Отправить">Отправить</button>
+                	<button class="btn long-btn" type="submit" value="Отправить">Отправить</button>
               	</div>
             </form>
           </section>
-
 
 	</body>
 </html>
