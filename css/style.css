@@ -3,10 +3,10 @@ body {
 	margin: 0;
     padding: 0;
 
-	font-family: Roboto, Arial, sans-serif;
+	font-family: 'Roboto', sans-serif, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 24px;
-	font-weight: normal;
+	font-weight: 400;
 	color: #283136;
 
 	background-color: #ffffff;
@@ -53,8 +53,6 @@ a {
 .button:active,
 .btn:active {
     color: rgba(40, 49, 54, 0.3);
-    /*border-top: 3px solid #e5e5e5;
-    box-sizing: border-box;*/
 }
 
 .long-button,
@@ -125,6 +123,7 @@ a {
 .contacts .long-button {
     font-size: 16px;
     line-height: 18px;
+    font-weight: 400;
     padding: 15px 45px;
 }
 
@@ -132,8 +131,48 @@ a {
     padding: 15px 80px;
 }
 
+.btn-show {
+    width: 260px;
+    height: 50px;
+    background-color: #eeeeee;
+    color: #000000;
+    font-weight: 500;
+}
 
-/*==================СТИЛИ НАВИГАЦИИ==================*/
+.btn-show:hover {
+    background-color: #dfdfdf;
+}
+
+.btn-show:focus,
+.btn-show:active {
+    background-color: #d5d5d5;
+    color: rgba(40, 49, 54, 0.3);
+}
+
+.item-price {
+    color: #ffffff;
+    background-color: #fb565a;
+    padding: 15px 40px;
+}
+
+.item-price:hover {
+    background-color: #e74246;
+}
+
+.item-price:focus,
+.item-price:active {
+    background-color: #d7373b;
+}
+
+
+
+
+/*==================СТИЛИ HEADER И НАВИГАЦИИ==================*/
+.main-header {
+    width: 1440px;
+    margin: 0 auto;
+}
+
 .logotype:hover {
     opacity: 1;
 }
@@ -146,10 +185,14 @@ a {
 .main-nav {
     font-size: 16px;
     line-height: 30px;
+    font-weight: 500;
     color: #000000;
     text-transform: uppercase;
-
     background-color: #eeeeee;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .nav-items,
@@ -158,7 +201,9 @@ a {
 .orders,
 .portfolio-list,
 .footer-social ul {
-    list-style: none; 
+    list-style: none;
+    margin: 0;
+    padding: 0; 
 }
 
 .main-nav a {
@@ -177,7 +222,12 @@ a {
 
 /*==================СТИЛИ МЭЙНА==================*/
 .main-content {
+    width: 1440px;
+    margin: 0 auto;
     background-color: #ffffff;
+    /*display: flex;
+    flex-direction: row;
+    justify-content: space-around;*/
 }
 
 .main-content-promo {
@@ -187,6 +237,10 @@ a {
 .promo-slider h2 {
     font-size: 55px;
     line-height: 55px;
+    font-weight: 500;
+    color: #000000;
+    margin: 0;
+    padding: 0;
 }
 
 .main-content-advantages,
@@ -202,12 +256,14 @@ a {
 .advantage-item h3 {
     font-size: 24px;
     line-height: 30px;
+    font-weight: 700;
     text-transform: uppercase;
 }
 
 .content-studio-left b {
     font-size: 45px;
     line-height: 45px;
+    font-weight: 500;
     color: #000000;
 }
 
@@ -215,13 +271,14 @@ a {
 .content-studio-right h3 {
     font-size: 16px;
     line-height: 24px;
+    font-weight: 700;
     color: #000000;
     text-transform: uppercase;
 }
 
 .info-table-top th {
     font-size: 45px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 10.06px;
     padding: 20px;
 }
@@ -229,7 +286,7 @@ a {
 .info-table-bottom th {
     font-size: 16px;
     line-height: 18px;
-    font-weight: normal;
+    font-weight: 400;
 }
 
 .portfolio-list img {
@@ -246,7 +303,7 @@ a {
 }
 
 /*.main-content-map {
-    background-image: url("img/map.png");
+    background-image: url("../img/map.png");
     background-repeat: no-repeat;
     background-position: 0 0;
 }*/
@@ -258,14 +315,14 @@ a {
 .contacts h2 {
     font-size: 18px;
     line-height: 30px;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
 }
 
 .contacts p {
     font-size: 16px;
     line-height: 18px;
-    font-weight: normal;
+    font-weight: 400;
     color: #666666;
 }
 
@@ -273,7 +330,6 @@ a {
 /*==================СТИЛИ ФУТЕРА==================*/
 .main-footer {
   color: #444444;
-
   background-color: #ffffff;
 }
 
@@ -288,20 +344,20 @@ a {
 .footer-sale b {
     font-size: 36px;
     line-height: 36px;
-    font-weight: bold;
+    font-weight: 700;
     color: #000000;
 }
 
 .footer-sale p {
     font-size: 16px;
     line-height: 22px;
-    font-weight: normal;
+    font-weight: 400;
 }
 
 
 
 
-/*==================СТИЛИ ФОРМЫ==================*/
+/*==================СТИЛИ ФОРМЫ ГЛАВНОЙ СТРАНИЦЫ==================*/
 .form-container {
     margin: 10px;  /*временные*/
     box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
@@ -314,6 +370,7 @@ a {
 .form-title {
     font-size: 45px;
     line-height: 45px;
+    font-weight: 400;
     color: #000000;
 }
 
@@ -323,7 +380,7 @@ a {
   font-size: 16px;
   line-height: 18px;
   color: rgba(68, 68, 68, 0.5);
-  font-weight: normal;
+  font-weight: 400;
 
   background-color: #ffffff;
   border: 2px solid #d7dcde;
@@ -349,9 +406,227 @@ a {
   font-size: 16px;
   line-height: 18px;
   color: #000000;
-  font-weight: bold;
+  font-weight: 700;
 }
 
-input:invalid {
+/*input:invalid {
   border-color: red;
+}*/
+
+
+
+
+/*==================СТИЛИ СТРАНИЦЫ КАТАЛОГА==================*/
+.catalog-title {
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
+    color: #000000;
+    padding-top: 65px;
+    padding-bottom: 105px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #eeeeee;
+}
+
+.filter-container {
+    width: 320px;
+    margin-top: 60px;
+    margin-left: 140px;
+}
+
+.filter-title-grid,
+.filter-title-features {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.circle,
+.check {
+    color: #283136;
+}
+
+.circle:hover {
+    color: #000000;
+}
+
+.check:hover {
+    color: #283136;
+}
+
+.filter,
+.filter-install {
+    border: none;
+    margin-bottom: 50px;
+}
+
+.filter-scroll {
+    
+}
+
+.scroll-control {
+    width: 260px;
+    height: 80px;
+    background-color: #eeeeee;
+    margin-bottom: 14px;
+    border-radius: 2px;
+}
+
+.filter-price {
+    display: flex;
+    flex-direction: row;
+    width: 260px;
+    height: 50px;
+    justify-content: space-between;
+}
+
+.filter-price span {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #283136;
+    padding-top: 10px;
+}
+
+input[type="text"].price-min,
+input[type="text"].price-max {
+    width: 80px;
+    height: 38px;
+    text-align: center;
+    background-color: #eeeeee;
+    border: none;
+    border-radius: 2px;
+}
+
+.filter-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.filter-container li {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #283136;
+    padding: 5px 0;
+}
+
+.portfolio-container {
+    width: 800px;
+    margin-top: 60px;
+    margin-left: 140px;
+}
+
+.portfolio-title {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.portfolio-items,
+.catalog-gallery {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.portfolio-items li,
+.portfolio-item {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.3);
+    padding: 5px 10px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.portfolio-item:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.portfolio-item:focus,
+.portfolio-item:active {
+    color: rgba(0, 0, 0, 1);
+}
+
+.catalog-item-wrapper {
+    width: 360px;
+    height: 620px;
+    margin: 20px;
+}
+
+.catalog-item-wrapper:hover {
+    box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.3);
+}
+
+
+.item-name {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.catalog-item-bottom p {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #666666;
+}
+
+.pages {
+    margin-bottom: 60px;
+}
+
+
+.pages-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pages-items li {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.item-page {
+    color: #000000;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    background-color: #eeeeee;
+    border-radius: 2px;
+}
+
+.item-page:hover {
+    background-color: #dfdfdf;
+}
+
+.item-page:focus {
+    background-color: #d5d5d5;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.item-page:active,
+.active-item-page,
+.active-item-page:hover  {
+    background-color: #ffffff;
+    border: 2px solid #dbdbdb;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.next-page {
+    padding: 15px 50px;
 }
