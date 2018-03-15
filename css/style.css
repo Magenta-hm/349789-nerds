@@ -60,6 +60,10 @@ a {
     background-color: #fb565a;
 }
 
+.long-button {
+    font-weight: 500;
+}
+
 .long-button:hover,
 .long-btn:hover,
 .long-button:focus,
@@ -78,6 +82,12 @@ a {
 
 .advantage-item a {
     padding: 15px 35px;
+}
+
+.button-web,               
+.button-app,
+.button-presentations {
+    font-weight: 500;
 }
 
 .button-web {
@@ -121,14 +131,12 @@ a {
 }
 
 .contacts .long-button {
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 400;
     padding: 15px 45px;
 }
 
 .long-btn {
     padding: 15px 80px;
+    font-weight: 500;
 }
 
 .btn-show {
@@ -150,6 +158,7 @@ a {
 }
 
 .item-price {
+    font-weight: 500;
     color: #ffffff;
     background-color: #fb565a;
     padding: 15px 40px;
@@ -174,7 +183,7 @@ a {
 }
 
 .logotype:hover {
-    opacity: 1;
+    opacity: 0.8;
 }
 
 .logotype:active,
@@ -257,6 +266,7 @@ a {
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
+    color: #000000;
     text-transform: uppercase;
 }
 
@@ -435,6 +445,7 @@ a {
     margin-left: 140px;
 }
 
+.filter-title,
 .filter-title-grid,
 .filter-title-features {
     font-size: 18px;
