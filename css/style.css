@@ -32,6 +32,7 @@ a {
 .main-header {
     background-color: #eeeeee;
     min-height: 545px;
+    margin-bottom: 80px;
 }
 
 .main-header-logo {
@@ -105,9 +106,7 @@ a {
 }
 
 .main-content-promo {
-    margin-bottom: 80px;
     padding-top: 80px;
-    /*padding-bottom: 80px;*/
     background-color: transparent;
 }
 
@@ -141,6 +140,10 @@ a {
 
 /*==================СТИЛИ МЭЙНА==================*/
 
+.container-wrap {
+    margin-bottom: 80px;
+}
+
 .main-content-advantages {
     margin-bottom: 40px;
     padding-bottom: 80px;
@@ -171,12 +174,6 @@ a {
     margin-top: 18px;
     margin-bottom: 15px;
 }
-
-/*.advantage-item p {
-    padding-bottom: 17px;
-}*/
-
-
 
 .main-content-advantages {
     border-bottom: 2px solid #eeeeee;
@@ -258,7 +255,6 @@ a {
 }
 
 .main-content-portfolio {
-    margin-bottom: 80px;
     border-bottom: 2px solid #eeeeee;
 
     padding-top: 50px;
