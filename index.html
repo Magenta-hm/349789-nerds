@@ -25,24 +25,38 @@
 
 			<h1 class="visually-hidden">Нёрдс</h1>
 
-			<section class="main-content-promo container">
-				<ul class="promo-slider">
-					<li class="slide">							
-						<h2>Долго, дорого, скрупулезно.</h2> 
-						<p>Математически выверенный дизайндля вашего сайта или мобильного приложения.</p>
-						<a class="button long-button" href="#">Узнать больше</a>
-					</li>
-					<li class="slide"> 
-						<h2>Любим математику как никто другой</h2> 
-						<p>Никакого креатива, только математиеческие формулы для расчета идеальных пропорций.</p>
-						<a class="button long-button" href="#">Узнать больше</a>
-					</li>	
-					<li class="slide">
-						<h2>Только ночь, только хардкор</h2>
-						<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-						<a class="button long-button" href="#">Узнать больше</a>
-					</li>
-				</ul>
+			<section class="main-content-promo">
+				<div class="container">
+					<h2 class="visually-hidden">Наши преимущества</h2>
+					<input class="visually-hidden" type="radio" id="slide-1" name="toggle" checked>
+					<input class="visually-hidden" type="radio" id="slide-2" name="toggle">
+					<input class="visually-hidden" type="radio" id="slide-3" name="toggle">
+					<div class="slider-controls">
+						<label class="slider-controls-item slider-controls-item-1" for="slide-1">Слайд 1</label>
+						<label class="slider-controls-item slider-controls-item-2" for="slide-2">Слайд 2</label>
+          				<label class="slider-controls-item slider-controls-item-3" for="slide-3">Слайд 3</label>
+					</div>
+					<ul class="promo-slider">
+						<li class="slide">							
+							<h2>Долго, дорого, скрупулезно.</h2> 
+							<p>Математически выверенный дизайн<br> 
+							   для вашего сайта или мобильного приложения.</p>
+							<a class="button lern-more-button" href="#">Узнать больше</a>
+						</li>
+						<li class="slide"> 
+							<h2>Любим математику как никто другой</h2> 
+							<p>Никакого креатива, только математиеческие формулы для расчета идеальных пропорций.</p>
+							<a class="button lern-more-button" href="#">Узнать больше</a>
+						</li>	
+						<li class="slide">
+							<h2>Только ночь,<br>
+							    только хардкор</h2>
+							<p>Работать днем, как все? Мы против этого.<br>
+							   Ближе к полуночи работа только начинается.</p>
+							<a class="button lern-more-button" href="#">Узнать больше</a>
+						</li>
+					</ul>
+				</div>
 			</section>
 		</header>
 		
@@ -81,9 +95,9 @@
 						<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
 						<h3>Выполняем заказы на разработку:</h3>
 						<ul class="orders">
-							<li>Веб-сайтов любой сложности</li>
-							<li>Мобильных приложений для iOS и Android</li>
-							<li>Слайдшоу и видео для корпоративных презентаций</li>
+							<li><p>Веб-сайтов любой сложности</p></li>
+							<li><p>Мобильных приложений для iOS и Android</p></li>
+							<li><p>Слайдшоу и видео для корпоративных презентаций</p></li>
 						</ul>
 					</section>
 					
@@ -109,16 +123,16 @@
 					<h2 class="visually-hidden">Наше портфолио</h2>
 					<ul class="portfolio-list">
 						<li>
-							<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" width="199" height="68" aria-label="HTML Academy" alt="htmlacademy"></a>
+							<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" width="260" height="180" aria-label="HTML Academy" alt="htmlacademy"></a>
 						</li>
 						<li>
-							<a href="#"><img src="img/logo-2.png" width="209" height="90" aria-label="Barbershop Borodinski" alt="Barbershop"></a>
+							<a class="portfolio-logos" href="#"><img src="img/logo-2.png" width="260" height="180" aria-label="Barbershop Borodinski" alt="Barbershop"></a>
 						</li>
 						<li>
-							<a href="#"><img src="img/logo-3.png" width="185" height="52" aria-label="Pink" alt="Pink"></a>
+							<a class="portfolio-logos" href="#"><img src="img/logo-3.png" width="260" height="180" aria-label="Pink" alt="Pink"></a>
 						</li>
 						<li>
-							<a href="#"><img src="img/logo-4.png" width="173" height="84" aria-label="Mishka" alt="Mishka"></a>
+							<a class="portfolio-logos" href="#"><img src="img/logo-4.png" width="260" height="180" aria-label="Mishka" alt="Mishka"></a>
 						</li>
 					</ul>
 				</section>
@@ -130,10 +144,8 @@
 					<h2>Nёrds design studio</h2>
         			<p>191186, Санкт-Петербург<br>
            		   	   ул. Б. Конюшенная, д. 19/8</p>
-           		
-           			<p>Телефон: +7 (812) 275-75-75</p>
-        		
-        			<a class="button long-button" href="#">Напишите нам</a>
+           			<p>тел.: +7 (812) 275-75-75</p>
+        			<a class="button write-button" href="#">Напишите нам</a>
 				</div>
 			</div>
 		</main>			
@@ -142,9 +154,21 @@
 			<div class="container">
 				<div class="footer-social">
         			<ul>
-          				<li><a class="social-button" href="#">Вконтакте</a></li>   
-          				<li><a class="social-button" href="#">Фейсбук</a></li>
-          				<li><a class="social-button" href="#">Инстаграм</a></li>
+          				<li>
+          					<a class="social-button social-button-vkontacte" href="#">
+          						<span class="visually-hidden">Вконтакте</span>
+          					</a>
+          				</li>   
+          				<li>
+          					<a class="social-button social-button-facebook" href="#">
+          						<span class="visually-hidden">Фейсбук</span>
+          					</a>
+          				</li>
+          				<li>
+          					<a class="social-button social-button-instagram" href="#">
+          						<span class="visually-hidden">Инстаграм</span>
+          					</a>
+          				</li>
         			</ul>
       			</div>
       			<div class="footer-slogan">
