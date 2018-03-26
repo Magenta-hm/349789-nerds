@@ -193,19 +193,19 @@ a {
 .slide:nth-child(1) {
   background-image: url("../img/nerds-index-slide1.png");
   background-repeat: no-repeat;
-  background-position: 407px 1px;
+  background-position: 397px 1px;
 }
 
 .slide:nth-child(2) {
   background-image: url("../img/nerds-index-slide2.png");
   background-repeat: no-repeat;
-  background-position: 409px 0;
+  background-position: 399px 1px;
 }
 
 .slide:nth-child(3) {
   background-image: url("../img/nerds-index-slide3.png");
   background-repeat: no-repeat;
-  background-position: 411px 0;
+  background-position: 401px 0;
 }
 
 #slide-1:checked ~ .promo-slider .slide:nth-child(1),
@@ -263,8 +263,8 @@ a {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 10px;
-    right: 10px;
+    left: 0;
+    right: 0;
     height: 2px;
     background-color: #eeeeee;
 }
@@ -309,8 +309,8 @@ a {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 10px;
-    right: 10px;
+    left: 0;
+    right: 0;
     height: 2px;
     background-color: #eeeeee;
 }
@@ -406,15 +406,14 @@ a {
     content: "";
     position: absolute;
     bottom: 0px; 
-    left: 10px;
-    right: 10px;
+    left: 0;
+    right: 0;
     height: 2px;
     background-color: #eeeeee;
 }
 
 .portfolio-list {
     display: flex;
-    /*justify-content: space-around; */
     justify-content: space-between;
     flex-wrap: wrap;   
     list-style: none;
@@ -576,7 +575,6 @@ a {
 
 .range-controls .scale {
     height: 2px;
-
     background: #d7dcde;
 }
 
@@ -934,23 +932,6 @@ input[type=checkbox]:checked + .check:disabled {
     border-top-right-radius: 3px;
 }
 
-/*.catalog-item-wrapper {
-    position: relative;
-    padding-top: 40px;
-    width: 360px;
-    height: 575px;
-    background-color: #e9e9e9;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-}
-
-.catalog-item-wrapper:hover,
-.catalog-item-wrapper:focus {
-    box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.3);
-    background-color: #4d4d4d;
-    transition: 0.2s ease-in-out;
-}*/
-
 .catalog-item::before {
     position: absolute;
     content: url("../img/browser.svg");
@@ -965,52 +946,10 @@ input[type=checkbox]:checked + .check:disabled {
     transition: 0.2s ease-in-out;
 }
 
-/*.round {
-    position: relative;
+.catalog-item:hover::before {
+    opacity: 1;
+    transition: 0.2s ease-in-out;
 }
-
-.round-1::after,
-.round-2::after,
-.round-3::after {
-    content: "";
-    position: absolute;
-    bottom: 13px;
-    display: block;
-    width: 15px;
-    height: 15px;
-    background-color: #ffffff;
-    border-radius: 50%;
-}
-
-.round-1::after {
-    left: 15px;
-}
-
-.round-2::after {
-    left: 37px;
-}
-
-.round-3::after {
-    left: 60px;
-}*/
-
-/*.catalog-item-wrapper .catalog-item-bottom {
-    display: none;
-    box-sizing: border-box;
-    padding: 10px 60px;
-    position: absolute;
-    width: 360px;
-    height: 230px;
-    left: 0;
-    bottom: 0;
-    text-align: center;
-    background-color: #eeeeee;
-}
-
-.catalog-item-wrapper:hover .catalog-item-bottom {
-    display: block;
-    transition: opacity 0.2s ease;
-}*/
 
 .catalog-item .catalog-item-bottom {
     display: none;
@@ -1047,7 +986,7 @@ input[type=checkbox]:checked + .check:disabled {
 }
 
 .pages {
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 76px;
     width: 460px;
 }
@@ -1069,6 +1008,7 @@ input[type=checkbox]:checked + .check:disabled {
 
 .item-page,
 .next-page {
+    display: block;
     color: #000000;
     text-transform: uppercase;
     padding: 15px 20px;
@@ -1096,17 +1036,14 @@ input[type=checkbox]:checked + .check:disabled {
 .item-page:active,
 .next-page:active {
 	background-color: #d5d5d5;
-	box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.15);
     color: rgba(0, 0, 0, 0.3);
+    
 }
 
-.item-page-active {
-	color: #000000;
-    text-transform: uppercase;
-    padding: 13px 18px;
-    background-color: #ffffff;
-    border-radius: 2px;
-    border: 2px solid #dbdbdb;
+.item-page:active {
+    border: none;
+    padding: 15px 20px;
 }
 
 .next-page {
@@ -1115,6 +1052,20 @@ input[type=checkbox]:checked + .check:disabled {
 
 .next-page:focus {
     padding: 13px 76px;
+}
+
+.next-page:active {
+    padding: 15px 78px;
+    border: none;
+}
+
+.item-page-active {
+    color: #000000;
+    text-transform: uppercase;
+    padding: 13px 18px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    border: 2px solid #dbdbdb;
 }
 
 
@@ -1383,26 +1334,30 @@ input[type=checkbox]:checked + .check:disabled {
 
 
 /*==================СТИЛИ ФОРМЫ==================*/
-.form-container {
-	position: fixed;
-    bottom: 166px;
-    left: 50%;
-    z-index: 30;
-    display: none;
-    width: 820px;
-    height: 440px;
-    margin-left: -480px; 
-    padding: 75px 70px;
-    box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
+
+.modal {
+    position: fixed;
+    color: #000000;
     background-color: #ffffff;
+    box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);  
 }
 
-.form-container-show {
-	/*display: block;*/
+.modal-form {
+    /*display: block;*/
+    bottom: 160px;
+    left: 50%;
+    width: 760px;
+    margin-left: -480px;
+    padding-top: 65px;
+    padding-bottom: 85px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    display: none;  /**********************/
 }
 
-.form-close {
-	position: absolute;
+.user-form-close {
+    position: absolute;
     top: 78px;
     right: 90px;
     width: 22px;
@@ -1411,12 +1366,12 @@ input[type=checkbox]:checked + .check:disabled {
     background-color: transparent;
     border: 0;
     outline: 0;
-    cursor: pointer;
+    cursor: pointer; 
 }
 
-.form-close::before,
-.form-close::after {
-	content: "";
+.user-form-close::before,
+.user-form-close::after {
+    content: "";
     position: absolute;
     top: 9px;
     left: -1px;
@@ -1426,64 +1381,65 @@ input[type=checkbox]:checked + .check:disabled {
     border-radius: 1px;
 }
 
-.form-close::before {
-	transform: rotate(45deg);
+.user-form-close::before {
+    transform: rotate(45deg);
 }
 
-.form-close::after {
-	transform: rotate(-45deg);
+.user-form-close::after {
+    transform: rotate(-45deg);
 }
 
-
-
-.form-title {
+.modal-form h2 {
+    margin: 0;
+    margin-bottom: 45px;
     font-size: 45px;
     line-height: 45px;
     font-weight: 500;
-    color: #000000;
-    margin: 0;
-    padding: 0 27px;
 }
 
-.form-letter-wrap {
-	display: flex;
-	justify-content: space-between;
+.user-form input[type="text"],
+.user-form input[type="email"],
+.user-form textarea {
+    font-size: 16px;
+    line-height: 18px;
+    color: rgba(68, 68, 68, 0.5);
+    font-weight: 400;
+    background-color: #ffffff;
+    border: 2px solid #d7dcde;
+    padding: 14px 10px; 
+    margin: 10px 0;
 }
 
-
-
-.form-letter input[type="text"],
-.form-letter input[type="email"],
-.form-letter textarea {
-  font-size: 16px;
-  line-height: 18px;
-  color: rgba(68, 68, 68, 0.5);
-  font-weight: 400;
-  background-color: #ffffff;
-  border: 2px solid #d7dcde;
-  padding: 10px 0;
+.user-form input[type="text"],
+.user-form input[type="email"] {
+    width: 336px;
 }
 
-.form-letter input[type="text"]:hover,
-.form-letter input[type="email"]:hover,
-.form-letter textarea:hover {
+.user-form textarea {
+    width: 736px;
+}
+
+.user-form input[type="text"]:hover,
+.user-form input[type="email"]:hover,
+.user-form textarea:hover {
     border-color: #b4b9bb;
 }
 
-.form-letter input[type="text"]:active,
-.form-letter input[type="email"]:active,
-.form-letter input[type="text"]:focus,
-.form-letter input[type="email"]:focus,
-.form-letter textarea:active,
-.form-letter textarea:focus {
+.user-form input[type="text"]:active,
+.user-form input[type="email"]:active,
+.user-form input[type="text"]:focus,
+.user-form input[type="email"]:focus,
+.user-form textarea:active,
+.user-form textarea:focus {
     border-color: #000000;
 }
 
-.label-name {
-  font-size: 16px;
-  line-height: 18px;
-  color: #000000;
-  font-weight: 700;
+.user-form input[type="text"]:invalid,
+.user-form input[type="email"]:invalid {
+    color: #e74246;
+    border-color: #e74246;
 }
+
+
 
 

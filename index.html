@@ -178,32 +178,30 @@
 			</div>
 		</footer>
 
-		<section class="form-container form-container-show">
-			<h2 class="form-title">Напишите нам</h2>
-            <!-- <div class="form-close"><span class="visually-hidden">Закрыть</span></div>-->
-            <button class="form-close" type="button" title="Закрыть">Закрыть</button>
-            <form class="form-letter" method="post" action="https://echo.htmlacademy.ru">
-              	<div class="form-letter-wrap">
-                	<p class="form-left-part">
-                  		<label for="client-name"><span class="label-name">Ваше имя:</span></label>
-                  		<input type="text" name="name" id="client-name" placeholder="Имя Фамилия" required>
-                	</p>
+		<section class="modal modal-form">
+			<h2>Напишите нам</h2>
+            
+            <form class="user-form" method="post" action="https://echo.htmlacademy.ru">
+                
+                <p class="user-form-name">
+                  	<label for="client-name">Ваше имя:</label>
+                  	<input type="text" name="name" id="client-name" placeholder="Имя Фамилия" required>
+                </p>
 
-                	<p class="form-right-part">
-                  		<label for="client-email"><span class="label-name">Ваш e-mail:</span></label>
-                  		<input type="email" name="email" id="client-email" placeholder="email@example.com" required>
-                	</p>
-              	</div>
+                <p class="user-form-email">
+                  	<label for="client-email">Ваш e-mail:</label>
+                  	<input type="email" name="email" id="client-email" placeholder="email@example.com" required>
+                </p>
 
-              	<p>
-              		<label for="client-letter"><span class="label-name">Текст письма:</span></label>
+              	<p class="user-form-text">
+              		<label for="client-letter">Текст письма:</label>
               		<textarea name="letter" cols="25" rows="5" id="client-letter" placeholder="В свободной форме"></textarea>
               	</p>
 
-              	<div class="button-send">
-                	<button class="btn long-btn" type="submit" value="Отправить">Отправить</button>
-              	</div>
+                <button class="btn long-btn" type="submit" value="Отправить">Отправить</button>
+              	
             </form>
+            <button class="user-form-close" type="button" title="Закрыть">Закрыть</button>
           </section>
 
 	</body>
