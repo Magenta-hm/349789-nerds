@@ -2,7 +2,7 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
-		<title>HTML Academy: Nerds</title>
+		<title>HTML Academy: ​Нёрдс</title>
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -135,7 +135,7 @@
 								<img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
 								<div class="catalog-item-bottom">
 									<a href="#"><h3 class="item-name">Barbershop</h3></a>
-									<p>Сайт салона красоты. Для мужчин, да.</p>
+									<p>Сайт салона красоты.&nbsp; Для мужчин, да.</p>
 									<a href="#" class="btn item-price">9 900 руб.</a>
 								</div>
 							</li>
@@ -144,7 +144,7 @@
 								<img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
 								<div class="catalog-item-bottom">
 									<a href="#"><h3 class="item-name">Mishka</h3></a>
-									<p>Интернет-магазин вязаных игрушек</p>
+									<p>Интернет-магазин&nbsp; вязаных игрушек</p>
 									<a href="#" class="btn item-price">9 900 руб.</a>
 								</div>
 							</li>
@@ -169,6 +169,7 @@
 						</ul>
 					</div>
 					<div class="pages">
+						<b class="visually-hidden">Переход на страницы каталога</b>
 						<ul class="pages-items">
 							<li><a class="item-page item-page-active">1</a></li>
 							<li><a class="item-page" href="#">2</a></li>
@@ -186,7 +187,7 @@
         			<p>191186, Санкт-Петербург<br>
            		   	   ул. Б. Конюшенная, д. 19/8</p>
            			<p>тел.: +7 (812) 275-75-75</p>
-        			<a class="button write-button" href="#">Напишите нам</a>
+        			<a class="button write-button" href="write-us.html">Напишите нам</a>
 				</div>
 			</div>
 		</main>	
@@ -219,32 +220,33 @@
 			</div>
 		</footer>
 
-		<section class="form-container">
-			<h2 class="form-title">Напишите нам</h2>
-            <div class="form-close"><span class="visually-hidden">Закрыть</span></div>
-            <form class="form-letter" method="post" action="https://echo.htmlacademy.ru">
-              	<div>
-                	<p class="form-left-part">
-                  		<label for="client-name"><span class="label-name">Ваше имя:</span></label>
-                  		<input type="text" name="name" id="client-name" placeholder="Имя Фамилия" required>
-                	</p>
+		<section class="modal modal-form">
+			<h2>Напишите нам</h2>
+            
+            <form class="user-form" method="post" action="https://echo.htmlacademy.ru">
+                
+                <p class="user-form-name">
+                  	<label for="client-name">Ваше имя:</label>
+                  	<input type="text" name="name" id="client-name" placeholder="Имя Фамилия" required>
+                </p>
 
-                	<p class="form-right-part">
-                  		<label for="client-email"><span class="label-name">Ваш e-mail:</span></label>
-                  		<input type="email" name="email" id="client-email" placeholder="email@example.com" required>
-                	</p>
-              	</div>
+                <p class="user-form-email">
+                  	<label for="client-email">Ваш e-mail:</label>
+                  	<input type="email" name="email" id="client-email" placeholder="email@example.com" required>
+                </p>
 
-              	<p>
-              		<label for="client-letter"><span class="label-name">Текст письма:</span></label>
+              	<p class="user-form-text">
+              		<label for="client-letter">Текст письма:</label>
               		<textarea name="letter" cols="25" rows="5" id="client-letter" placeholder="В свободной форме"></textarea>
               	</p>
 
-              	<div class="button-send">
-                	<button class="btn long-btn" type="submit" value="Отправить">Отправить</button>
-              	</div>
+                <button class="btn send-btn" type="submit" value="Отправить">Отправить</button>
+              	
             </form>
-          </section>
+            <button class="user-form-close" type="button" title="Закрыть">Закрыть</button>
+        </section>
+
+        <script src="./js/popup.js"></script>
 
 	</body>
 </html>
