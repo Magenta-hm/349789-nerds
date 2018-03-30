@@ -87,7 +87,7 @@ a {
     font-weight: 500;
     color: #000000;
     
-    background-color: transparent;
+    background-color: #eeeeee;
     text-transform: uppercase;
 }
 
@@ -95,6 +95,10 @@ a {
     width: 1160px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+.main-content-promo .container {
+    background-color: #eeeeee;
 }
 
 .nav-items {
@@ -856,8 +860,8 @@ input[type="text"].price-max {
 
 /*****************************************************/
 input[type=radio]+.circle {
-	width: 100%;
-	height: auto;
+    width: 100%;
+    height: auto;
     padding: 10px 35px;
     
     color: #283136;
@@ -868,8 +872,8 @@ input[type=radio]+.circle {
 }
 
 input[type=radio]+.circle:hover {
-	width: 100%;
-	height: auto;
+    width: 100%;
+    height: auto;
     padding: 10px 35px;
 
     color: #000000;
@@ -886,8 +890,8 @@ input[type=radio]+.circle:hover {
 }
 
 input[type=radio]+.circle:disabled {
-	width: 100%;
-	height: auto;
+    width: 100%;
+    height: auto;
     padding: 10px 35px;
 
     color: rgba(40, 49, 54, 0.3);
@@ -900,8 +904,8 @@ input[type=radio]+.circle:disabled {
 
 /*****************************************************/
 input[type=radio]:checked + .circle {
-	width: 100%;
-	height: auto;
+    width: 100%;
+    height: auto;
     padding: 10px 35px;
 
     color: #283136;
@@ -912,8 +916,8 @@ input[type=radio]:checked + .circle {
 }
 
 input[type=radio]:checked + .circle:hover {
-	width: 100%;
-	height: auto;
+    width: 100%;
+    height: auto;
     padding: 10px 35px;
 
     color: #000000;
@@ -931,8 +935,8 @@ input[type=radio]:checked + .circle:hover {
 
 input[type=radio]:checked + .circle:disabled,
 input[type=radio]:disabled + .circle {
-	width: 100%;
-	height: auto;
+    width: 100%;
+    height: auto;
     padding: 10px 35px;
 
     color: rgba(40, 49, 54, 0.3);
@@ -945,8 +949,8 @@ input[type=radio]:disabled + .circle {
 
 /*****************************************************/
 input[type=checkbox]+ .check {
-	width: 100%;
-	height: auto;
+    width: 100%;
+    height: auto;
     padding: 10px 35px;
 
     color: #283136;
@@ -957,8 +961,8 @@ input[type=checkbox]+ .check {
 }
 
 input[type=checkbox]+ .check:hover {
-	width: 100%;
-	height: auto;
+    width: 100%;
+    height: auto;
     padding: 10px 35px;
 
     color: #000000;
@@ -976,8 +980,8 @@ input[type=checkbox]+ .check:hover {
 
 input[type=checkbox]+ .check:disabled,
 input[type=checkbox]:disabled + .check {
-	width: 100%;
-	height: auto;
+    width: 100%;
+    height: auto;
     padding: 10px 35px;
 
     color: rgba(40, 49, 54, 0.3);
@@ -990,8 +994,8 @@ input[type=checkbox]:disabled + .check {
 
 /*****************************************************/
 input[type=checkbox]:checked + .check {
-	width: 100%;
-	height: auto;
+    width: 100%;
+    height: auto;
     padding: 10px 35px;
 
     color: #283136;
@@ -1002,8 +1006,8 @@ input[type=checkbox]:checked + .check {
 }
 
 input[type=checkbox]:checked + .check:hover {
-	width: 100%;
-	height: auto;
+    width: 100%;
+    height: auto;
     padding: 10px 35px;
 
     color: #000000;
@@ -1020,8 +1024,8 @@ input[type=checkbox]:checked + .check:hover {
 }
 
 input[type=checkbox]:checked + .check:disabled {
-	width: 100%;
-	height: auto;
+    width: 100%;
+    height: auto;
     padding: 10px 35px;
 
     color: rgba(40, 49, 54, 0.3);
@@ -1133,8 +1137,8 @@ input[type=checkbox]:checked + .check:disabled {
 }
 
 .control-arrow-down {
-	width: 100%;
-	height: auto;
+    width: 100%;
+    height: auto;
     padding-right: 10px;
 
     background-image: url("../img/icon-down-dir-peace.svg");
@@ -1142,38 +1146,38 @@ input[type=checkbox]:checked + .check:disabled {
 }
 
 .control-arrow-down:hover {
-	width: 100%;
-	height: auto;
+    width: 100%;
+    height: auto;
 
     background-image: url("../img/icon-down-dir-hover.svg");
 }
 
 .control-arrow-down:active,
 .control-arrow-active {
-	width: 100%;
-	height: auto;
+    width: 100%;
+    height: auto;
 
     background-image: url("../img/icon-down-dir-active.svg");
 }
 
 .control-arrow-up {
-	width: 100%;
-	height: auto;
+    width: 100%;
+    height: auto;
 
     background-image: url(../img/icon-up-dir-peace.svg);
     background-position: 4px 8px;
 } 
 
 .control-arrow-up:hover {
-	width: 100%;
-	height: auto;
+    width: 100%;
+    height: auto;
 
     background-image: url(../img/icon-up-dir-hover.svg);
 }
 
 .control-arrow-up:active {
-	width: 100%;
-	height: auto;
+    width: 100%;
+    height: auto;
 
     background-image: url(../img/icon-up-dir-active.svg);
 }       
@@ -1230,7 +1234,7 @@ input[type=checkbox]:checked + .check:disabled {
     left: 0;
 
     width: 100%;
-	height: auto;
+    height: auto;
     
     opacity: 0.3;
 }
@@ -1530,6 +1534,8 @@ input[type=checkbox]:checked + .check:disabled {
 
 .footer-slogan b {
     display: block;
+    
+    max-width: 560px;
     padding-top: 5px;
 
     font-size: 36px;
@@ -1897,12 +1903,12 @@ input[type=checkbox]:checked + .check:disabled {
 .user-form-close:hover::after,
 .user-form-close:focus::before,
 .user-form-close:focus::after {
-	background-color: rgba(251, 86, 90, 1);
+    background-color: rgba(251, 86, 90, 1);
 }
 
 .user-form-close:active::before,
 .user-form-close:active::after {
-	background-color: rgba(251, 86, 90, 0.1);
+    background-color: rgba(251, 86, 90, 0.1);
 }
 
 
