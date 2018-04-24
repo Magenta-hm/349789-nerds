@@ -3,6 +3,7 @@
 * Студент: [Татьяна Керимова](https://up.htmlacademy.ru/htmlcss/20/user/349789).
 * Наставник: [Елена Забара](https://htmlacademy.ru/profile/lena___elena).
 
+Ссылка на Github Pages: https://magenta-hm.github.io/349789-nerds/
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
